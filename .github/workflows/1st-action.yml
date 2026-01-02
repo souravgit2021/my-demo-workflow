@@ -1,10 +1,11 @@
-name: my-demo-1st-workflow
-on: workflow_dispatch
+name: demo action push event
+on: push
 jobs:
-  first-job: 
+  first-job:
     runs-on: ubuntu-latest
     steps:
       - name: print greeting
-        run: echo "Hello World"
-      - name: print goodBye
-        run: echo "Done Bye"
+        run: echo "Hellow World"
+      - name: GoodBye
+        run: echo "Good Bye"
+    
